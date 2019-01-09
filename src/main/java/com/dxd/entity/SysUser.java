@@ -6,12 +6,20 @@ import java.util.List;
 public class SysUser {
     //主键id
     private Integer id;
+
+    public SysUser(String username) {
+        this.username = username;
+    }
+
     //用户名
     private String username;
     //登录密码
     private String password;
 
     private List<SysRole> roles;
+
+    public SysUser() {
+    }
 
     public Integer getId() {
         return id;

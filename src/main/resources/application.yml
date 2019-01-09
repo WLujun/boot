@@ -1,7 +1,8 @@
 server:
-  port: 9999
+    port: 9999
  
 spring:
+
     datasource:
         name: mysql_boot
         type: com.alibaba.druid.pool.DruidDataSource
@@ -33,8 +34,8 @@ spring:
           max-pool-prepared-statement-per-connection-size: 20
  
 mybatis:
-  mapper-locations: classpath:mapper/*.xml #这里是mapper的配置文件
-  type-aliases-package: com.dxd.entity #这里是实体类的包
+    mapper-locations: classpath:mapper/*.xml #这里是mapper的配置文件
+    type-aliases-package: com.dxd.entity #这里是实体类的包
 
 #pagehelper分页相关配置
 pagehelper:
